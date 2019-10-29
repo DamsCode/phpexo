@@ -6,7 +6,7 @@ $datenow = new DateTime(null, new DateTimeZone('Europe/Brussels'));
 
 $dateTime = new DateTime(null, new DateTimeZone('Europe/Brussels'));
 
-if ($datenow > $dateTime->setTime(5, 00) && $datenow < $dateTime->setTime(9, 00)) {
+if ($datenow >= $dateTime->setTime(5, 00) && $datenow < $dateTime->setTime(9, 00)) {
   echo "Good morning !";
 }else if($datenow > $dateTime->setTime(9, 01) && $datenow < $dateTime->setTime(12, 00)){
     echo "Good day !";
